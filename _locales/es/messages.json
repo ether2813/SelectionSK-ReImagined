@@ -1,0 +1,490 @@
+{
+	"addonDesc": {
+		"message": "Todos sabemos que no puedes hacer un buen trabajo sin tener primero buenas herramientas - ahora con SelectionSK puedes ensamblar las mejores herramientas para ayudarte a navegar por la Web, ¡y aparecerán incluso cuando los necesites sin ningún clic extra!",
+		"description": "description of the add-on: 'We all know that you can't do good work without first having good tools - now with SelectionSK you can assemble the best tools for helping you browse the Web, and they'll even appear right when you need them without any extra clicks!' "
+	},
+	"addonDescChr": {
+		"message": "Despliega el menú del usuario con herramientas útiles (copiar, buscar, traducir, resaltar, etc.) cuando el texto se selecciona con el ratón.",
+		"description": "description of the add-on (max 132 characters): 'Pops up the user menu with useful tools (copy, search, translation, highlight, etc.) when the text is selected with the mouse.' "
+	},
+	"txtCopy": {
+		"message": "Copiar",
+		"description": "text of 'Copy' menu item"
+	},
+	"txtPaste": {
+		"message": "Pegar",
+		"description": "text of 'Paste' menu item"
+	},
+	"txtCut": {
+		"message": "Cortar",
+		"description": "text of 'Cut' menu item"
+	},
+	"txtDelete": {
+		"message": "Eliminar",
+		"description": "text of 'Delete' menu item"
+	},
+	"txtCopyPlain": {
+		"message": "Copiar como texto llano",
+		"description": "text of 'Copy as plain text' menu item"
+	},
+	"txtCopyHtml": {
+		"message": "Copiar como un HTML",
+		"description": "text of 'Copy as HTML' menu item"
+	},
+	"txtLngTools": {
+		"message": "Herramientas de lenguage",
+		"description": "text of 'Language tools' menu item"
+	},
+	"txtGoogleTranslate": {
+		"message": "Traductor de Google",
+		"description": "text of 'Google Translate' menu item"
+	},
+	"txtWordnikDictionary": {
+		"message": "Wordnik Thesaurus (en)",
+		"description": "text of 'Wordnik Thesaurus (en)' menu item"
+	},
+	"txtUrbanDictionary": {
+		"message": "Urban Dictionary",
+		"description": "text of 'Urban Dictionary' menu item"
+	},
+	"txtYandexTranslate": {
+		"message": "Yandex traducir",
+		"description": "text of 'Yandex Translate' menu item"
+	},
+	"txtMsTranslator": {
+		"message": "Traductor de Microsoft",
+		"description": "text of 'Microsoft Translatot' menu item"
+	},
+	"txtOpenUrl": {
+		"message": "Abierto como URL",
+		"description": "text of 'Open as URL' menu item"
+	},
+	"txtOpenUrlAll": {
+		"message": "Abrir todo en pestañas",
+		"description": "text of 'Open all in tabs' menu item"
+	},
+	"txtCopyUrlAll": {
+		"message": "Copiar todo",
+		"description": "text of 'Copy all' menu item"
+	},
+	"txtHighlight": {
+		"message": "Resaltar todo",
+		"description": "text of 'Highlight all' menu item"
+	},
+	"txtConvert": {
+		"message": "Convertir",
+		"description": "text of 'Convert' menu item"
+	},
+	"txtTracking": {
+		"message": "Número de seguimiento",
+		"description": "text of 'Tracking numbers' menu item"
+	},
+	"txtUPS": {
+		"message": "Seguimiento de UPS",
+		"description": "text of 'UPS Tracking' menu item"
+	},
+	"txtUSPS": {
+		"message": "Seguimiento USPS",
+		"description": "text of 'USPS Tracking' menu item"
+	},
+	"txtFedex": {
+		"message": "Seguimiento FedEx",
+		"description": "text of 'FedEx Tracking' menu item"
+	},
+	"txtConvCurrency": {
+		"message": "Moneda",
+		"description": "text of 'Currency' "
+	},
+	"txtConvTemperature": {
+		"message": "Temperatura",
+		"description": "text of 'Temperature' "
+	},
+	"txtConvMass": {
+		"message": "Masa",
+		"description": "text of 'Mass' "
+	},
+	"txtConvLen": {
+		"message": "Longitud",
+		"description": "text of 'Length' "
+	},
+	"txtShowConverter": {
+		"message": "Mostrar convertidor",
+		"description": "text of 'Show Converter' "
+	},
+	"txtMailto": {
+		"message": "Compartir vía e-mail",
+		"description": "text of 'Share via e-mail' menu item"
+	},
+	"txtInitSearch": {
+		"message": "Buscar",
+		"description": "text of 'Search' bookmark"
+	},
+	"txtInitDictionary": {
+		"message": "Diccionario",
+		"description": "text of 'Dictionary' bookmark"
+	},
+	"txtTranslationDetails": {
+		"message": "Abrir nueva ventana con la traducción detallada",
+		"description": "text of 'Open translation in new tab' "
+	},
+	"txtCopyTranslation": {
+		"message": "Traducción de la copia al portapapeles",
+		"description": "text of 'Copy translation to clipboard' "
+	},
+	"txtEnableAddon": {
+		"message": "Habilitar ventanas emergentes de SelectionSK en",
+		"description": "text of 'Enable SelectionSK popup on' "
+	},
+	"txtDisableAddon": {
+		"message": "Desactivar ventanas emergentes de SelectionSK",
+		"description": "text of 'Disable SelectionSK popup on' "
+	},
+	"txtTranslatePage": {
+		"message": "Traducir esta página",
+		"description": "text of 'Translate this page' "
+	},
+	"txtTranslateReverse": {
+		"message": "Idiomas de intercambio",
+		"description": "text of 'Swap languages' "
+	},
+	"txtReverse": {
+		"message": "Reverso",
+		"description": "text of 'Reverse' "
+	},
+	"txtCancel": {
+		"message": "Cancelar",
+		"description": "text of 'Cancel' "
+	},
+	"txtOK": {
+		"message": "OK",
+		"description": "text of 'OK' "
+	},
+	"txtSendTo": {
+		"message": "Enviar '%s' a",
+		"description": "text of 'Send '%s' to' "
+	},
+	"txtPrefPreferences": {
+		"message": "Preferencias",
+		"description": "text of preferences 'Preferences' "
+	},
+	"txtPrefGeneral": {
+		"message": "General",
+		"description": "text of preferences 'General' "
+	},
+	"txtPrefBookmarkFolder": {
+		"message": "Carpeta de marcadores",
+		"description": "text of preferences 'Bookmark folder' "
+	},
+	"txtPrefShow": {
+		"message": "Mostrar",
+		"description": "text of preferences 'Show' "
+	},
+	"txtPrefPopup": {
+		"message": "Popup menú",
+		"description": "text of preferences 'Menu popup' "
+	},
+	"txtPrefContextMenu": {
+		"message": "Menú contextual",
+		"description": "text of preferences 'Context menu' "
+	},
+	"txtPrefBoth": {
+		"message": "Ambos",
+		"description": "text of preferences 'Both' "
+	},
+	"txtPrefAutoCopy": {
+		"message": "Copia automáticamente la selección al portapapeles",
+		"description": "text of preferences 'Automatically copy selection to clipboard' "
+	},
+	"txtPrefBlinkOnCopy": {
+		"message": "Parpadear en auto-copy",
+		"description": "text of preferences 'Blink on auto-copy' "
+	},
+	"txtPrefAllowInTextBox": {
+		"message": "Permiten en cuadros de texto",
+		"description": "text of preferences 'Allow in text boxes' "
+	},
+	"txtPrefHideOnScroll": {
+		"message": "Ocultar el scroll de la página",
+		"description": "text of preferences 'Hide on page scroll' "
+	},
+	"txtPrefShowItems": {
+		"message": "Mostrar los elementos",
+		"description": "text of preferences 'Show items' "
+	},
+	"txtPrefBookmarks": {
+		"message": "Marcadores",
+		"description": "text of preferences 'Bookmarks' "
+	},
+	"txtPrefShowAs": {
+		"message": "Mostrar como",
+		"description": "text of preferences 'Show as' "
+	},
+	"txtPrefMenu": {
+		"message": "Menú",
+		"description": "text of preferences 'Menu' "
+	},
+	"txtPrefPanel": {
+		"message": "Panel de",
+		"description": "text of preferences 'Pane' "
+	},
+	"txtPrefSaved": {
+		"message": "Se han guardado las preferencias",
+		"description": "text of preferences 'Your preferences have been saved' "
+	},
+	"txtPrefTranslation": {
+		"message": "Traducción",
+		"description": "text of preferences 'Translation' "
+	},
+	"txtPrefTranslationDestLng": {
+		"message": "Idioma de destino",
+		"description": "text of preferences 'Destination language' "
+	},
+	"txtPrefHideOnMoveMouseAway": {
+		"message": "Ocultar al mover el ratón",
+		"description": "text of preferences 'Hide when mouse moved away' "
+	},
+	"txtPrefCountWords": {
+		"message": "Activar el contador de word",
+		"description": "text of preferences 'Enable word counter' "
+	},
+	"txtPrefMaintenance": {
+		"message": "Mantenimiento",
+		"description": "text of preferences 'Maintenance' "
+	},
+	"txtPrefNewIssue": {
+		"message": "Presentar una sugerencia o reportar un bug",
+		"description": "text of preferences 'Submit a suggestion or report a bug' "
+	},
+	"txtPrefHistory": {
+		"message": "Historial de versiones",
+		"description": "text of preferences 'Version History' "
+	},
+	"txtPrefAllowACInTextBox": {
+		"message": "Permite auto-copy en cuadros de texto",
+		"description": "text of preferences 'Allow auto-copy in text boxes' "
+	},
+	"txtPrefHighligher": {
+		"message": "Resaltar",
+		"description": "text of preferences 'Highlighter' "
+	},
+	"txtPrefAutoHighlight": {
+		"message": "Resaltar el texto seleccionado al abrir un marcador",
+		"description": "text of preferences 'Highlight selected text when opening a bookmark' "
+	},
+	"txtPrefColors": {
+		"message": "Colores",
+		"description": "text of preferences 'Colors' "
+	},
+	"txtPrefRestorePrefs": {
+		"message": "Restablecer a valores predefinidos",
+		"description": "text of preferences 'Restore defaults' "
+	},
+	"txtPrefRestoreBookmarks": {
+		"message": "Restaurar favoritos",
+		"description": "text of preferences 'Restore bookmarks' "
+	},
+	"txtPrefRestorePrefsQ": {
+		"message": "Todas las preferencias se reemplazará con los valores predeterminados. ¿Desea continuar?",
+		"description": "text of preferences 'All preferences will be replaced with default values. Continue?' "
+	},
+	"txtPrefRestoreBookmarksQ": {
+		"message": "Todos los marcadores se reemplazará con los valores predeterminados. ¿Desea continuar?",
+		"description": "text of preferences 'All bookmarks will be replaced with default values. Continue?' "
+	},
+	"txtPrefKeepSelection": {
+		"message": "Mantener selección después de la acción",
+		"description": "text of preferences 'Keep selection after action taken' "
+	},
+	"txtPrefKeepPopup": {
+		"message": "Mantenga la ventana emergente abierta después de la acción",
+		"description": "text of preferences 'Keep popup open after action taken' "
+	},
+	"txtPrefSave": {
+		"message": "Guardar los cambios",
+		"description": "text of preferences 'Save changes' "
+	},
+	"txtPrefCtrlC": {
+		"message": "Ctrl + C copia la información de la página cuando nada seleccionado",
+		"description": "text of preferences 'Ctrl+C copies the page info when nothing selected' "
+	},
+	"txtPrefAutoSelectColors": {
+		"message": "Elegir colores automáticamente",
+		"description": "text of preferences 'Select colors automatically' "
+	},
+	"txtPrefPanelRows": {
+		"message": "filas",
+		"description": "text of preferences 'rows' "
+	},
+	"txtPrefPanelCols": {
+		"message": "columnas",
+		"description": "text of preferences 'columns' "
+	},
+	"txtPrefTemplate": {
+		"message": "plantilla",
+		"description": "text of preferences 'template' "
+	},
+	"txtPrefUnobtrusive": {
+		"message": "Modo discreto",
+		"description": "text of preferences 'Unobtrusive mode' "
+	},
+	"txtPrefOpenIn": {
+		"message": "Abrir en",
+		"description": "text of preferences 'Open in' "
+	},
+	"txtPrefOpenInNewTab": {
+		"message": "Nueva pestaña",
+		"description": "text of preferences 'New tab' "
+	},
+	"txtPrefOpenInBgTab": {
+		"message": "Nueva ficha de fondo",
+		"description": "text of preferences 'New background tab' "
+	},
+	"txtPrefOpenInCurrTab": {
+		"message": "Pestaña actual",
+		"description": "text of preferences 'Current tab' "
+	},
+	"txtPrefShortcutPageTranslate": {
+		"message": "Atajo de teclado para traducir la página",
+		"description": "text of preferences 'Keyboard shortcut for page translate' "
+	},
+	"txtPrefAppearance": {
+		"message": "Apariencia",
+		"description": "text of preferences 'Appearance' "
+	},
+	"txtPrefIconSize": {
+		"message": "Tamaño de los iconos",
+		"description": "text of preferences 'Icon size' "
+	},
+	"txtPrefIconPadding": {
+		"message": "Relleno de icono",
+		"description": "text of preferences 'Icon padding' "
+	},
+	"txtPrefBkColor": {
+		"message": "Fondo",
+		"description": "text of preferences 'Background' "
+	},
+	"txtPrefPadding": {
+		"message": "Margen interior",
+		"description": "text of preferences 'Padding' "
+	},
+	"txtPrefRoundness": {
+		"message": "Redondez",
+		"description": "text of preferences 'Roundness' "
+	},
+	"txtPrefFontSize": {
+		"message": "Tamaño de la letra",
+		"description": "text of preferences 'Font size' "
+	},
+	"txtPrefColor": {
+		"message": "Color",
+		"description": "text of preferences 'Color' "
+	},
+	"txtPrefConfigureShortcuts": {
+		"message": "Configurar atajos de teclado",
+		"description": "text of preferences 'Configure keyboard shortcuts' "
+	},
+	"txtPrefLocalize": {
+		"message": "Ayuda a localizar SelectionSK con Crowdin",
+		"description": "text of preferences 'Help localize SelectionSK with Crowdin' "
+	},
+	"txtPrefIgnorePunctuation": {
+		"message": "Ignorar la puntuación en el texto seleccionado",
+		"description": "text of preferences 'Ignore punctuation in the selected text' "
+	},
+	"txtPrefConversion": {
+		"message": "Conversión",
+		"description": "text of preferences 'Conversion' "
+	},
+	"txtPrefConversionDestCur": {
+		"message": "Moneda de destino",
+		"description": "text of preferences 'Destination currency' "
+	},
+	"txtPrefConversionDestTemp": {
+		"message": "Temperatura de destino",
+		"description": "text of preferences 'Destination temperature' "
+	},
+	"txtPrefConversionDestMass": {
+		"message": "Masa de destino",
+		"description": "text of preferences 'Destination mass' "
+	},
+	"txtPrefConversionDestLen": {
+		"message": "Longitud de destino",
+		"description": "text of preferences 'Destination length' "
+	},
+	"txtPrefShortcutShowConverter": {
+		"message": "Atajo de teclado para mostrar el convertidor",
+		"description": "text of preferences 'Keyboard shortcut for show converter' "
+	},
+	"txtPrefHold": {
+		"message": "Mantenga",
+		"description": "text of preferences 'Hold' "
+	},
+	"txtPrefInstantTranslationKey": {
+		"message": "para traducción instantánea",
+		"description": "text of preferences 'for instant translation' "
+	},
+	"txtPrefInstantHighlighKey": {
+		"message": "para resaltar instantánea",
+		"description": "text of preferences 'for instant highlight' "
+	},
+	"txtPrefInstantConversionKey": {
+		"message": "para la conversión instantánea",
+		"description": "text of preferences 'for instant conversion' "
+	},
+	"txtPrefBorderColor": {
+		"message": "Borde",
+		"description": "text of preferences 'Border' "
+	},
+	"txtPrefLngColor": {
+		"message": "Idioma",
+		"description": "text of preferences 'Language' "
+	},
+	"txtPrefEngineColor": {
+		"message": "Traductor",
+		"description": "text of preferences 'Translator' "
+	},
+	"txtPrefConverterColor": {
+		"message": "Convertir",
+		"description": "text of preferences 'Converter' "
+	},
+	"txtPrefUnitColor": {
+		"message": "Unidad",
+		"description": "text of preferences 'Unit' "
+	},
+	"txtPrefBackupToFile": {
+		"message": "Respaldar en archivo",
+		"description": "text of preferences 'Backup to file' "
+	},
+	"txtPrefRestoreFromFile": {
+		"message": "Restaurar desde archivo",
+		"description": "text of preferences 'Restore from file' "
+	},
+	"txtPrefFaviconService": {
+		"message": "Fuente de iconos",
+		"description": "text of preferences 'Icons source' "
+	},
+	"txtPrefEnableSelection": {
+		"message": "Permitir selección de texto en sitios web que deshabilitan esta funcionalidad",
+		"description": "text of preferences 'Allow text selection on websites that disable this functionality' "
+	},
+	"txtPrefReuseContainer": {
+		"message": "Abrir nueva pestaña en el contenedor desde el que se abrió",
+		"description": "text of preferences 'Open new tab in the container it was opened from' "
+	},
+	"txtPrefTranscriptionOwnLine": {
+		"message": "Transcripción en la línea separada",
+		"description": "text of preferences 'Transcription on the separate line' "
+	},
+	"txtPrefTranslationDefTrans": {
+		"message": "Traductor por defecto",
+		"description": "text of preferences 'Default translator' "
+	},
+	"txtPrefIconsColor": {
+		"message": "Color de iconos",
+		"description": "text of preferences 'Icons color' "
+	},
+	"txtPrefTranslationSelectedLng": {
+		"message": "Usar solo los siguientes idiomas",
+		"description": "text of preferences 'Use only following languages' "
+	}
+}

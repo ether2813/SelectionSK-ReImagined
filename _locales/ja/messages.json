@@ -1,0 +1,490 @@
+{
+	"addonDesc": {
+		"message": "最初は良いツールがなければ良い仕事ができないことを私たち全員が知っています - 今SelectionSKであなたがウェブを閲覧するのを助けるための最良のツールを組み立てることができます",
+		"description": "description of the add-on: 'We all know that you can't do good work without first having good tools - now with SelectionSK you can assemble the best tools for helping you browse the Web, and they'll even appear right when you need them without any extra clicks!' "
+	},
+	"addonDescChr": {
+		"message": "テキストがマウスで選択されたときに、便利なツール（コピー、検索、翻訳、ハイライトなど）でユーザーメニューをポップアップします。",
+		"description": "description of the add-on (max 132 characters): 'Pops up the user menu with useful tools (copy, search, translation, highlight, etc.) when the text is selected with the mouse.' "
+	},
+	"txtCopy": {
+		"message": "コピー",
+		"description": "text of 'Copy' menu item"
+	},
+	"txtPaste": {
+		"message": "貼り付け",
+		"description": "text of 'Paste' menu item"
+	},
+	"txtCut": {
+		"message": "切り取り",
+		"description": "text of 'Cut' menu item"
+	},
+	"txtDelete": {
+		"message": "削除",
+		"description": "text of 'Delete' menu item"
+	},
+	"txtCopyPlain": {
+		"message": "プレーンテキストとしてコピーする",
+		"description": "text of 'Copy as plain text' menu item"
+	},
+	"txtCopyHtml": {
+		"message": "HTMLとしてコピー",
+		"description": "text of 'Copy as HTML' menu item"
+	},
+	"txtLngTools": {
+		"message": "言語ツール",
+		"description": "text of 'Language tools' menu item"
+	},
+	"txtGoogleTranslate": {
+		"message": "グーグル翻訳",
+		"description": "text of 'Google Translate' menu item"
+	},
+	"txtWordnikDictionary": {
+		"message": "Wordnik シソーラス (en)",
+		"description": "text of 'Wordnik Thesaurus (en)' menu item"
+	},
+	"txtUrbanDictionary": {
+		"message": "Urban Dictionary",
+		"description": "text of 'Urban Dictionary' menu item"
+	},
+	"txtYandexTranslate": {
+		"message": "Yandex翻訳",
+		"description": "text of 'Yandex Translate' menu item"
+	},
+	"txtMsTranslator": {
+		"message": "Microsoft Translator",
+		"description": "text of 'Microsoft Translatot' menu item"
+	},
+	"txtOpenUrl": {
+		"message": "URLとして開く",
+		"description": "text of 'Open as URL' menu item"
+	},
+	"txtOpenUrlAll": {
+		"message": "すべてをタブで開く",
+		"description": "text of 'Open all in tabs' menu item"
+	},
+	"txtCopyUrlAll": {
+		"message": "すべてコピー",
+		"description": "text of 'Copy all' menu item"
+	},
+	"txtHighlight": {
+		"message": "すべて強調表示",
+		"description": "text of 'Highlight all' menu item"
+	},
+	"txtConvert": {
+		"message": "変換する",
+		"description": "text of 'Convert' menu item"
+	},
+	"txtTracking": {
+		"message": "追跡番号",
+		"description": "text of 'Tracking numbers' menu item"
+	},
+	"txtUPS": {
+		"message": "UPSトラッキング",
+		"description": "text of 'UPS Tracking' menu item"
+	},
+	"txtUSPS": {
+		"message": "USPS トラッキング",
+		"description": "text of 'USPS Tracking' menu item"
+	},
+	"txtFedex": {
+		"message": "FedEx トラッキング",
+		"description": "text of 'FedEx Tracking' menu item"
+	},
+	"txtConvCurrency": {
+		"message": "通貨",
+		"description": "text of 'Currency' "
+	},
+	"txtConvTemperature": {
+		"message": "温度",
+		"description": "text of 'Temperature' "
+	},
+	"txtConvMass": {
+		"message": "質量",
+		"description": "text of 'Mass' "
+	},
+	"txtConvLen": {
+		"message": "長さ",
+		"description": "text of 'Length' "
+	},
+	"txtShowConverter": {
+		"message": "コンバーターを表示",
+		"description": "text of 'Show Converter' "
+	},
+	"txtMailto": {
+		"message": "電子メールで共有する",
+		"description": "text of 'Share via e-mail' menu item"
+	},
+	"txtInitSearch": {
+		"message": "検索",
+		"description": "text of 'Search' bookmark"
+	},
+	"txtInitDictionary": {
+		"message": "辞書",
+		"description": "text of 'Dictionary' bookmark"
+	},
+	"txtTranslationDetails": {
+		"message": "詳細な翻訳で新しいウィンドウを開く",
+		"description": "text of 'Open translation in new tab' "
+	},
+	"txtCopyTranslation": {
+		"message": "翻訳をクリップボードにコピーする",
+		"description": "text of 'Copy translation to clipboard' "
+	},
+	"txtEnableAddon": {
+		"message": "を SelectionSK ポップアップに",
+		"description": "text of 'Enable SelectionSK popup on' "
+	},
+	"txtDisableAddon": {
+		"message": "SelectionSK ポップアップをオンにする",
+		"description": "text of 'Disable SelectionSK popup on' "
+	},
+	"txtTranslatePage": {
+		"message": "このページを翻訳します",
+		"description": "text of 'Translate this page' "
+	},
+	"txtTranslateReverse": {
+		"message": "言語を交換する",
+		"description": "text of 'Swap languages' "
+	},
+	"txtReverse": {
+		"message": "逆",
+		"description": "text of 'Reverse' "
+	},
+	"txtCancel": {
+		"message": "キャンセル",
+		"description": "text of 'Cancel' "
+	},
+	"txtOK": {
+		"message": "OK",
+		"description": "text of 'OK' "
+	},
+	"txtSendTo": {
+		"message": "'%s' を送信",
+		"description": "text of 'Send '%s' to' "
+	},
+	"txtPrefPreferences": {
+		"message": "設定",
+		"description": "text of preferences 'Preferences' "
+	},
+	"txtPrefGeneral": {
+		"message": "一般",
+		"description": "text of preferences 'General' "
+	},
+	"txtPrefBookmarkFolder": {
+		"message": "ブックマークフォルダ",
+		"description": "text of preferences 'Bookmark folder' "
+	},
+	"txtPrefShow": {
+		"message": "ショー",
+		"description": "text of preferences 'Show' "
+	},
+	"txtPrefPopup": {
+		"message": "メニューポップアップ",
+		"description": "text of preferences 'Menu popup' "
+	},
+	"txtPrefContextMenu": {
+		"message": "コンテキストメニュー",
+		"description": "text of preferences 'Context menu' "
+	},
+	"txtPrefBoth": {
+		"message": "どちらも",
+		"description": "text of preferences 'Both' "
+	},
+	"txtPrefAutoCopy": {
+		"message": "選択範囲をクリップボードに自動的にコピーする",
+		"description": "text of preferences 'Automatically copy selection to clipboard' "
+	},
+	"txtPrefBlinkOnCopy": {
+		"message": "自動コピーで点滅",
+		"description": "text of preferences 'Blink on auto-copy' "
+	},
+	"txtPrefAllowInTextBox": {
+		"message": "テキストボックスで許可する",
+		"description": "text of preferences 'Allow in text boxes' "
+	},
+	"txtPrefHideOnScroll": {
+		"message": "ページスクロールで非表示",
+		"description": "text of preferences 'Hide on page scroll' "
+	},
+	"txtPrefShowItems": {
+		"message": "商品を表示する",
+		"description": "text of preferences 'Show items' "
+	},
+	"txtPrefBookmarks": {
+		"message": "ブックマーク",
+		"description": "text of preferences 'Bookmarks' "
+	},
+	"txtPrefShowAs": {
+		"message": "次のように表示する",
+		"description": "text of preferences 'Show as' "
+	},
+	"txtPrefMenu": {
+		"message": "メニュー",
+		"description": "text of preferences 'Menu' "
+	},
+	"txtPrefPanel": {
+		"message": "ペイン",
+		"description": "text of preferences 'Pane' "
+	},
+	"txtPrefSaved": {
+		"message": "検索設定を保存しました",
+		"description": "text of preferences 'Your preferences have been saved' "
+	},
+	"txtPrefTranslation": {
+		"message": "翻訳",
+		"description": "text of preferences 'Translation' "
+	},
+	"txtPrefTranslationDestLng": {
+		"message": "行き先の言語",
+		"description": "text of preferences 'Destination language' "
+	},
+	"txtPrefHideOnMoveMouseAway": {
+		"message": "マウスが離れたときに隠す",
+		"description": "text of preferences 'Hide when mouse moved away' "
+	},
+	"txtPrefCountWords": {
+		"message": "ワードカウンタを有効にする",
+		"description": "text of preferences 'Enable word counter' "
+	},
+	"txtPrefMaintenance": {
+		"message": "メンテナンス",
+		"description": "text of preferences 'Maintenance' "
+	},
+	"txtPrefNewIssue": {
+		"message": "提案を提出するか、バグを報告する",
+		"description": "text of preferences 'Submit a suggestion or report a bug' "
+	},
+	"txtPrefHistory": {
+		"message": "バージョン履歴",
+		"description": "text of preferences 'Version History' "
+	},
+	"txtPrefAllowACInTextBox": {
+		"message": "テキストボックスに自動コピーを許可する",
+		"description": "text of preferences 'Allow auto-copy in text boxes' "
+	},
+	"txtPrefHighligher": {
+		"message": "蛍光ペン",
+		"description": "text of preferences 'Highlighter' "
+	},
+	"txtPrefAutoHighlight": {
+		"message": "ブックマークを開くときに選択したテキストを強調表示する",
+		"description": "text of preferences 'Highlight selected text when opening a bookmark' "
+	},
+	"txtPrefColors": {
+		"message": "配色",
+		"description": "text of preferences 'Colors' "
+	},
+	"txtPrefRestorePrefs": {
+		"message": "初期設定に戻す",
+		"description": "text of preferences 'Restore defaults' "
+	},
+	"txtPrefRestoreBookmarks": {
+		"message": "ブックマークを復元する",
+		"description": "text of preferences 'Restore bookmarks' "
+	},
+	"txtPrefRestorePrefsQ": {
+		"message": "すべての設定はデフォルト値に置き換えられます。 持続する？",
+		"description": "text of preferences 'All preferences will be replaced with default values. Continue?' "
+	},
+	"txtPrefRestoreBookmarksQ": {
+		"message": "すべてのブックマークはデフォルト値に置き換えられます。 持続する？",
+		"description": "text of preferences 'All bookmarks will be replaced with default values. Continue?' "
+	},
+	"txtPrefKeepSelection": {
+		"message": "アクションを取った後も選択を維持",
+		"description": "text of preferences 'Keep selection after action taken' "
+	},
+	"txtPrefKeepPopup": {
+		"message": "アクションが実行された後、ポップアップを開いたままにします",
+		"description": "text of preferences 'Keep popup open after action taken' "
+	},
+	"txtPrefSave": {
+		"message": "変更を保存",
+		"description": "text of preferences 'Save changes' "
+	},
+	"txtPrefCtrlC": {
+		"message": "Ctrl+C は選択されていないときにページ情報をコピーします",
+		"description": "text of preferences 'Ctrl+C copies the page info when nothing selected' "
+	},
+	"txtPrefAutoSelectColors": {
+		"message": "自動的に色を選択",
+		"description": "text of preferences 'Select colors automatically' "
+	},
+	"txtPrefPanelRows": {
+		"message": "行",
+		"description": "text of preferences 'rows' "
+	},
+	"txtPrefPanelCols": {
+		"message": "列",
+		"description": "text of preferences 'columns' "
+	},
+	"txtPrefTemplate": {
+		"message": "テンプレート",
+		"description": "text of preferences 'template' "
+	},
+	"txtPrefUnobtrusive": {
+		"message": "目立たないモード",
+		"description": "text of preferences 'Unobtrusive mode' "
+	},
+	"txtPrefOpenIn": {
+		"message": "で開く",
+		"description": "text of preferences 'Open in' "
+	},
+	"txtPrefOpenInNewTab": {
+		"message": "新しいタブ",
+		"description": "text of preferences 'New tab' "
+	},
+	"txtPrefOpenInBgTab": {
+		"message": "新しい背景タブ",
+		"description": "text of preferences 'New background tab' "
+	},
+	"txtPrefOpenInCurrTab": {
+		"message": "現在のタブ",
+		"description": "text of preferences 'Current tab' "
+	},
+	"txtPrefShortcutPageTranslate": {
+		"message": "ページの翻訳用のキーボードショートカット",
+		"description": "text of preferences 'Keyboard shortcut for page translate' "
+	},
+	"txtPrefAppearance": {
+		"message": "アピアランス",
+		"description": "text of preferences 'Appearance' "
+	},
+	"txtPrefIconSize": {
+		"message": "アイコンサイズ",
+		"description": "text of preferences 'Icon size' "
+	},
+	"txtPrefIconPadding": {
+		"message": "アイコンパディング",
+		"description": "text of preferences 'Icon padding' "
+	},
+	"txtPrefBkColor": {
+		"message": "背景",
+		"description": "text of preferences 'Background' "
+	},
+	"txtPrefPadding": {
+		"message": "パディング",
+		"description": "text of preferences 'Padding' "
+	},
+	"txtPrefRoundness": {
+		"message": "丸み",
+		"description": "text of preferences 'Roundness' "
+	},
+	"txtPrefFontSize": {
+		"message": "フォントサイズ",
+		"description": "text of preferences 'Font size' "
+	},
+	"txtPrefColor": {
+		"message": "色",
+		"description": "text of preferences 'Color' "
+	},
+	"txtPrefConfigureShortcuts": {
+		"message": "キーボードショートカットを設定する",
+		"description": "text of preferences 'Configure keyboard shortcuts' "
+	},
+	"txtPrefLocalize": {
+		"message": "CrowdinでSelectionSKのローカライズを支援",
+		"description": "text of preferences 'Help localize SelectionSK with Crowdin' "
+	},
+	"txtPrefIgnorePunctuation": {
+		"message": "選択したテキストの句読点を無視します",
+		"description": "text of preferences 'Ignore punctuation in the selected text' "
+	},
+	"txtPrefConversion": {
+		"message": "変換",
+		"description": "text of preferences 'Conversion' "
+	},
+	"txtPrefConversionDestCur": {
+		"message": "目的通貨",
+		"description": "text of preferences 'Destination currency' "
+	},
+	"txtPrefConversionDestTemp": {
+		"message": "目的地の気温",
+		"description": "text of preferences 'Destination temperature' "
+	},
+	"txtPrefConversionDestMass": {
+		"message": "目的地の質量",
+		"description": "text of preferences 'Destination mass' "
+	},
+	"txtPrefConversionDestLen": {
+		"message": "目的地の長さ",
+		"description": "text of preferences 'Destination length' "
+	},
+	"txtPrefShortcutShowConverter": {
+		"message": "ショーコンバータのキーボードショートカット",
+		"description": "text of preferences 'Keyboard shortcut for show converter' "
+	},
+	"txtPrefHold": {
+		"message": "ホールド",
+		"description": "text of preferences 'Hold' "
+	},
+	"txtPrefInstantTranslationKey": {
+		"message": "インスタント翻訳用",
+		"description": "text of preferences 'for instant translation' "
+	},
+	"txtPrefInstantHighlighKey": {
+		"message": "インスタントハイライト用",
+		"description": "text of preferences 'for instant highlight' "
+	},
+	"txtPrefInstantConversionKey": {
+		"message": "インスタントコンバージョン用",
+		"description": "text of preferences 'for instant conversion' "
+	},
+	"txtPrefBorderColor": {
+		"message": "ボーダー",
+		"description": "text of preferences 'Border' "
+	},
+	"txtPrefLngColor": {
+		"message": "言語",
+		"description": "text of preferences 'Language' "
+	},
+	"txtPrefEngineColor": {
+		"message": "翻訳者",
+		"description": "text of preferences 'Translator' "
+	},
+	"txtPrefConverterColor": {
+		"message": "コンバーター",
+		"description": "text of preferences 'Converter' "
+	},
+	"txtPrefUnitColor": {
+		"message": "単位",
+		"description": "text of preferences 'Unit' "
+	},
+	"txtPrefBackupToFile": {
+		"message": "ファイルにバックアップ",
+		"description": "text of preferences 'Backup to file' "
+	},
+	"txtPrefRestoreFromFile": {
+		"message": "ファイルから復元",
+		"description": "text of preferences 'Restore from file' "
+	},
+	"txtPrefFaviconService": {
+		"message": "アイコンソース",
+		"description": "text of preferences 'Icons source' "
+	},
+	"txtPrefEnableSelection": {
+		"message": "この機能を無効にするWebサイトでのテキスト選択を許可する",
+		"description": "text of preferences 'Allow text selection on websites that disable this functionality' "
+	},
+	"txtPrefReuseContainer": {
+		"message": "開かれたコンテナ内の新しいタブを開く",
+		"description": "text of preferences 'Open new tab in the container it was opened from' "
+	},
+	"txtPrefTranscriptionOwnLine": {
+		"message": "別系統に表記されている",
+		"description": "text of preferences 'Transcription on the separate line' "
+	},
+	"txtPrefTranslationDefTrans": {
+		"message": "デフォルトの翻訳",
+		"description": "text of preferences 'Default translator' "
+	},
+	"txtPrefIconsColor": {
+		"message": "アイコンの色",
+		"description": "text of preferences 'Icons color' "
+	},
+	"txtPrefTranslationSelectedLng": {
+		"message": "次の言語のみを使用",
+		"description": "text of preferences 'Use only following languages' "
+	}
+}
