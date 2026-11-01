@@ -1,0 +1,9 @@
+Third-party libraries used by the content scripts (unchanged copies):
+
+mark.js
+	https://markjs.io/
+	Copyright (c) 2014-2018 Julian Kühnel, released under the MIT license.
+
+googleDocsUtil.js
+	https://github.com/JensPLarsen/ChromeExtension-GoogleDocsUtil
+	Copyright (c) 2017 Dictus ApS, released under the MIT license.

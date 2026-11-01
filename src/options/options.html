@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="color-scheme" content="light dark">
+	<title>SelectionSK</title>
+	<link rel="icon" href="../../icons/SelectionSK_32.png">
+	<link rel="stylesheet" href="options.css">
+</head>
+
+<body>
+	<header class="topbar">
+		<div class="brand">
+			<img src="../../icons/SelectionSK_48.png" alt="" width="28" height="28">
+			<div>
+				<div class="brand-name">SelectionSK</div>
+				<div class="brand-version" id="version"></div>
+			</div>
+		</div>
+		<div class="search">
+			<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15.5 14h-.79l-.28-.27A6.47 6.47 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+			<input type="search" id="search" data-i18n-placeholder="txtPrefSearchSettings" autocomplete="off" spellcheck="false">
+		</div>
+		<div class="autosave" data-i18n="txtPrefAutoSaveHint"></div>
+	</header>
+
+	<div class="layout">
+		<nav class="sidenav" id="sidenav" aria-label="Sections">
+			<a href="#general"><svg viewBox="0 0 24 24"><path d="M19.14 12.94a7.07 7.07 0 0 0 0-1.88l2.03-1.58a.5.5 0 0 0 .12-.64l-1.92-3.32a.5.5 0 0 0-.61-.22l-2.39.96a7.03 7.03 0 0 0-1.62-.94l-.36-2.54A.5.5 0 0 0 13.9 2h-3.84a.5.5 0 0 0-.49.42l-.36 2.54c-.59.24-1.13.56-1.62.94l-2.39-.96a.5.5 0 0 0-.61.22L2.67 8.48a.5.5 0 0 0 .12.64l2.03 1.58a7.07 7.07 0 0 0 0 1.88l-2.03 1.58a.5.5 0 0 0-.12.64l1.92 3.32c.13.22.39.3.61.22l2.39-.96c.49.38 1.03.7 1.62.94l.36 2.54c.05.24.25.42.49.42h3.84c.24 0 .44-.18.49-.42l.36-2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.22.08.48 0 .61-.22l1.92-3.32a.5.5 0 0 0-.12-.64l-2.03-1.58zM12 15.6a3.6 3.6 0 1 1 0-7.2 3.6 3.6 0 0 1 0 7.2z"/></svg><span data-i18n="txtPrefGeneral"></span></a>
+			<a href="#popup"><svg viewBox="0 0 24 24"><path d="M3 4h18v2H3zm0 5h12v2H3zm0 5h18v2H3zm0 5h12v2H3z"/></svg><span data-i18n="txtPrefPopup"></span></a>
+			<a href="#translation"><svg viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.52 17.52 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7 1.62-4.33L19.12 17h-3.24z"/></svg><span data-i18n="txtPrefTranslation"></span></a>
+			<a href="#highlighter"><svg viewBox="0 0 24 24"><path d="m6 14 3 3v5h6v-5l3-3V9H6v5zm5-12h2v3h-2zM3.5 5.88l1.41-1.41 2.12 2.12L5.62 8 3.5 5.88zm13.46.71 2.12-2.12 1.41 1.41L18.38 8l-1.42-1.41z"/></svg><span data-i18n="txtPrefHighligher"></span></a>
+			<a href="#conversion"><svg viewBox="0 0 24 24"><path d="M6.99 11 3 15l3.99 4v-3H14v-2H6.99v-3zM21 9l-3.99-4v3H10v2h7.01v3L21 9z"/></svg><span data-i18n="txtPrefConversion"></span></a>
+			<a href="#appearance"><svg viewBox="0 0 24 24"><path d="M12 3a9 9 0 0 0 0 18c.83 0 1.5-.67 1.5-1.5 0-.39-.15-.74-.39-1.01a1.5 1.5 0 0 1 1.13-2.49H16c2.76 0 5-2.24 5-5 0-4.42-4.03-8-9-8zm-5.5 9a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm3-4a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm3 4a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/></svg><span data-i18n="txtPrefAppearance"></span></a>
+			<a href="#shortcuts"><svg viewBox="0 0 24 24"><path d="M20 5H4a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2zm-9 3h2v2h-2V8zm0 3h2v2h-2v-2zM8 8h2v2H8V8zm0 3h2v2H8v-2zm-1 2H5v-2h2v2zm0-3H5V8h2v2zm9 7H8v-2h8v2zm0-4h-2v-2h2v2zm0-3h-2V8h2v2zm3 3h-2v-2h2v2zm0-3h-2V8h2v2z"/></svg><span data-i18n="txtPrefShortcuts"></span></a>
+			<a href="#apikeys"><svg viewBox="0 0 24 24"><path d="M12.65 10A6 6 0 1 0 12.65 14H17v4h4v-4h2v-4H12.65zM7 14a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"/></svg><span data-i18n="txtPrefApiKeys"></span></a>
+			<a href="#maintenance"><svg viewBox="0 0 24 24"><path d="M22.7 19 13.6 9.9c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.7C.4 7.1.9 10.1 2.9 12.1c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.4z"/></svg><span data-i18n="txtPrefMaintenance"></span></a>
+			<a href="#about"><svg viewBox="0 0 24 24"><path d="M11 7h2v2h-2zm0 4h2v6h-2zm1-9C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/></svg><span data-i18n="txtPrefAbout"></span></a>
+		</nav>
+
+		<main id="main">
+			<p class="no-results" id="noResults" hidden data-i18n="txtPrefNoResults"></p>
+
+			<!-- ===================== General ===================== -->
+			<section id="general" class="section">
+				<h2 data-i18n="txtPrefGeneral"></h2>
+				<div class="card">
+					<div class="row">
+						<div class="row-text">
+							<label class="row-label" for="prefBookmarkFolder" data-i18n="txtPrefBookmarkFolder"></label>
+							<div class="row-hint" data-i18n="txtPrefBookmarkFolderHint"></div>
+						</div>
+						<div class="row-control"><input type="text" id="prefBookmarkFolder" data-pref="prefBookmarkFolder" class="input" spellcheck="false"></div>
+					</div>
+					<div class="row">
+						<div class="row-text"><div class="row-label" data-i18n="txtPrefShow"></div></div>
+						<div class="row-control">
+							<div class="segmented" role="radiogroup">
+								<label><input type="radio" name="show" data-pref="prefShowPopupOnly"><span data-i18n="txtPrefPopup"></span></label>
+								<label><input type="radio" name="show" data-pref="prefShowContextOnly"><span data-i18n="txtPrefContextMenu"></span></label>
+								<label><input type="radio" name="show" data-pref="prefShowPopupContext"><span data-i18n="txtPrefBoth"></span></label>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="row-text"><div class="row-label" data-i18n="txtPrefOpenIn"></div></div>
+						<div class="row-control">
+							<div class="segmented" role="radiogroup">
+								<label><input type="radio" name="openin" data-pref="prefOpenInNewTab"><span data-i18n="txtPrefOpenInNewTab"></span></label>
+								<label><input type="radio" name="openin" data-pref="prefOpenInBgTab"><span data-i18n="txtPrefOpenInBgTab"></span></label>
+								<label><input type="radio" name="openin" data-pref="prefOpenInCurrTab"><span data-i18n="txtPrefOpenInCurrTab"></span></label>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="row-text">
+							<div class="row-label" data-i18n="txtPrefFaviconService"></div>
+							<div class="row-hint" data-i18n="txtPrefIconsSourceDesc"></div>
+						</div>
+						<div class="row-control">
+							<div class="segmented" role="radiogroup">
+								<label><input type="radio" name="favicon" data-pref="prefFavDuck"><span>DuckDuckGo</span></label>
+								<label><input type="radio" name="favicon" data-pref="prefFavGoogle"><span>Google</span></label>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<h3 data-i18n="txtCopy"></h3>
+				<div class="card">
+					<label class="row"><span class="row-text"><span class="row-label" data-i18n="txtPrefAutoCopy"></span></span>
+						<span class="row-control"><input type="checkbox" class="switch" data-pref="prefAutoCopy"></span></label>
+					<label class="row sub" data-depends="prefAutoCopy"><span class="row-text"><span class="row-label" data-i18n="txtCopyPlain"></span></span>
+						<span class="row-control"><input type="checkbox" class="switch" data-pref="prefAutoCopyPlain"></span></label>
+					<label class="row sub" data-depends="prefAutoCopy"><span class="row-text"><span class="row-label" data-i18n="txtPrefAllowACInTextBox"></span></span>
+						<span class="row-control"><input type="checkbox" class="switch" data-pref="prefAllowACInTextBox"></span></label>
+					<label class="row sub" data-depends="prefAutoCopy"><span class="row-text"><span class="row-label" data-i18n="txtPrefBlinkOnCopy"></span></span>
+						<span class="row-control"><input type="checkbox" class="switch" data-pref="prefBlinkOnCopy"></span></label>
+					<label class="row"><span class="row-text"><span class="row-label" data-i18n="txtPrefCtrlC"></span></span>
+						<span class="row-control"><input type="checkbox" class="switch" data-pref="prefCtrlC"></span></label>
+					<div class="row sub" data-depends="prefCtrlC">
+						<div class="row-text">
+							<label class="row-label" for="prefCtrlCPattern" data-i18n="txtPrefTemplate"></label>
+							<div class="row-hint" data-i18n="txtPrefCtrlCPatternHint"></div>
+						</div>
+						<div class="row-control"><input type="text" id="prefCtrlCPattern" data-pref="prefCtrlCPattern" class="input mono" spellcheck="false"></div>
+					</div>
+				</div>
+
+				<h3 data-i18n="txtPrefBehavior"></h3>
+				<div class="card">
+					<label class="row"><span class="row-text"><span class="row-label" data-i18n="txtPrefCountWords"></span></span>
+						<span class="row-control"><input type="checkbox" class="switch" data-pref="prefCountWords"></span></label>
+					<label class="row"><span class="row-text"><span class="row-label" data-i18n="txtPrefEnableSelection"></span></span>
+						<span class="row-control"><input type="checkbox" class="switch" data-pref="prefEnableSelection"></span></label>
+				</div>
+
+				<h3 data-i18n="txtPrefDisabledSites"></h3>
+				<div class="card">
+					<div class="row column">
+						<div class="row-hint" data-i18n="txtPrefDisabledSitesDesc"></div>
+						<ul class="site-list" id="siteList"></ul>
+						<p class="empty" id="siteListEmpty" data-i18n="txtPrefNoDisabledSites"></p>
+					</div>
+				</div>
+			</section>
+
+			<!-- ===================== Popup ===================== -->
+			<section id="popup" class="section">
+				<h2 data-i18n="txtPrefPopup"></h2>
+				<div class="card">
+					<div class="row">
+						<div class="row-text"><div class="row-label" data-i18n="txtPrefShowAs"></div></div>
+						<div class="row-control">
+							<div class="segmented" role="radiogroup">
+								<label><input type="radio" name="showas" data-pref="prefShowAsMenu"><span data-i18n="txtPrefMenu"></span></label>
+								<label><input type="radio" name="showas" data-pref="prefShowAsPanel"><span data-i18n="txtPrefPanel"></span></label>
+								<label><input type="radio" name="showas" data-pref="prefShowAsTranslation"><span data-i18n="txtPrefTranslation"></span></label>
+							</div>
+						</div>
+					</div>
+					<label class="row"><span class="row-text"><span class="row-label" data-i18n="txtPrefUnobtrusive"></span><span class="row-hint" data-i18n="txtPrefUnobtrusiveHint"></span></span>
+						<span class="row-control"><input type="checkbox" class="switch" data-pref="prefUnobtrusive"></span></label>
+				</div>
+
+				<h3 data-i18n="txtPrefShowItems"></h3>
+				<div class="card">
+					<div class="row column">
+						<div class="row-label small" data-i18n="txtPrefShowItemsCopy"></div>
+						<div class="chips">
+							<label class="chip"><input type="checkbox" data-pref="prefShowCopy"><img src="../../icons/copy.svg" alt=""><span data-i18n="txtCopy"></span></label>
+							<label class="chip"><input type="checkbox" data-pref="prefShowCopyPlain"><img src="../../icons/copy_plain.svg" alt=""><span data-i18n="txtCopyPlain"></span></label>
+							<label class="chip"><input type="checkbox" data-pref="prefShowCopyHtml"><img src="../../icons/copy_html.svg" alt=""><span data-i18n="txtCopyHtml"></span></label>
+						</div>
+					</div>
+					<div class="row column">
+						<div class="row-label small" data-i18n="txtPrefShowItemsLng"></div>
+						<div class="chips">
+							<label class="chip"><input type="checkbox" data-pref="prefShowGoogleTranslate"><img src="../../icons/favicons/translate.google.com.svg" alt=""><span data-i18n="txtGoogleTranslate"></span></label>
+							<label class="chip"><input type="checkbox" data-pref="prefShowMsTranslator"><img src="../../icons/favicons/ms.translate.png" alt=""><span data-i18n="txtMsTranslator"></span></label>
+							<label class="chip"><input type="checkbox" data-pref="prefShowYandexTranslate"><img src="../../icons/favicons/translate.yandex.com.png" alt=""><span data-i18n="txtYandexTranslate"></span></label>
+							<label class="chip"><input type="checkbox" data-pref="prefShowWordnikDictionary"><img src="../../icons/favicons/www.wordnik.com.png" alt=""><span data-i18n="txtWordnikDictionary"></span></label>
+							<label class="chip"><input type="checkbox" data-pref="prefShowUrbanDictionary"><img src="../../icons/favicons/www.urbandictionary.com.png" alt=""><span data-i18n="txtUrbanDictionary"></span></label>
+						</div>
+					</div>
+					<div class="row column">
+						<div class="row-label small" data-i18n="txtPrefShowItemsTools"></div>
+						<div class="chips">
+							<label class="chip"><input type="checkbox" data-pref="prefShowOpenUrl"><img src="../../icons/open_url.svg" alt=""><span data-i18n="txtOpenUrl"></span></label>
+							<label class="chip"><input type="checkbox" data-pref="prefShowHighlight"><img src="../../icons/highlight.svg" alt=""><span data-i18n="txtHighlight"></span></label>
+							<label class="chip"><input type="checkbox" data-pref="prefShowConvert"><img src="../../icons/convert.svg" alt=""><span data-i18n="txtConvert"></span></label>
+							<label class="chip"><input type="checkbox" data-pref="prefShowTrackingNumbers"><img src="../../icons/ups.svg" alt=""><span data-i18n="txtTracking"></span></label>
+							<label class="chip"><input type="checkbox" data-pref="prefShowMailto"><img src="../../icons/mailto.svg" alt=""><span data-i18n="txtMailto"></span></label>
+							<label class="chip"><input type="checkbox" data-pref="prefShowSearch"><img src="../../icons/search.svg" alt=""><span data-i18n="txtSearchDefault"></span></label>
+							<label class="chip"><input type="checkbox" data-pref="prefShowBookmarks"><img src="../../icons/open_url.svg" alt=""><span data-i18n="txtPrefBookmarks"></span></label>
+						</div>
+					</div>
+				</div>
+
+				<h3 data-i18n="txtPrefBehavior"></h3>
+				<div class="card">
+					<label class="row"><span class="row-text"><span class="row-label" data-i18n="txtPrefAllowInTextBox"></span></span>
+						<span class="row-control"><input type="checkbox" class="switch" data-pref="prefAllowInTextBox"></span></label>
+					<label class="row"><span class="row-text"><span class="row-label" data-i18n="txtPrefHideOnScroll"></span></span>
+						<span class="row-control"><input type="checkbox" class="switch" data-pref="prefHideOnScroll"></span></label>
+					<label class="row"><span class="row-text"><span class="row-label" data-i18n="txtPrefHideOnMoveMouseAway"></span></span>
+						<span class="row-control"><input type="checkbox" class="switch" data-pref="prefHideOnMoveMouseAway"></span></label>
+					<label class="row"><span class="row-text"><span class="row-label" data-i18n="txtPrefKeepSelection"></span></span>
+						<span class="row-control"><input type="checkbox" class="switch" data-pref="prefKeepSelection"></span></label>
+					<label class="row"><span class="row-text"><span class="row-label" data-i18n="txtPrefKeepPopup"></span></span>
+						<span class="row-control"><input type="checkbox" class="switch" data-pref="prefKeepPopup"></span></label>
+				</div>
+			</section>
+
+			<!-- ===================== Translation ===================== -->
+			<section id="translation" class="section">
+				<h2 data-i18n="txtPrefTranslation"></h2>
+				<div class="card">
+					<div class="row">
+						<div class="row-text"><label class="row-label" for="prefTranslationDestLng" data-i18n="txtPrefTranslationDestLng"></label></div>
+						<div class="row-control"><select id="prefTranslationDestLng" data-pref="prefTranslationDestLng" data-source="lng" class="input"></select></div>
+					</div>
+					<div class="row">
+						<div class="row-text"><label class="row-label" for="prefDefaultTranslator" data-i18n="txtPrefTranslationDefTrans"></label></div>
+						<div class="row-control"><select id="prefDefaultTranslator" data-pref="prefDefaultTranslator" data-source="trans" class="input"></select></div>
+					</div>
+					<div class="row">
+						<div class="row-text"><label class="row-label" for="prefInstantTranslationKey" data-hold="txtPrefInstantTranslationKey"></label></div>
+						<div class="row-control"><select id="prefInstantTranslationKey" data-pref="prefInstantTranslationKey" data-source="keys" class="input"></select></div>
+					</div>
+					<label class="row"><span class="row-text"><span class="row-label" data-i18n="txtPrefTranscriptionOwnLine"></span></span>
+						<span class="row-control"><input type="checkbox" class="switch" data-pref="prefTranscriptionOwnLine"></span></label>
+					<div class="row column">
+						<div class="row-head">
+							<div class="row-label" data-i18n="txtPrefTranslationSelectedLng"></div>
+							<span class="badge" id="lngCount"></span>
+						</div>
+						<div class="lng-picker" id="lngPicker">
+							<div class="lng-tools">
+								<input type="search" id="lngFilter" class="input" data-i18n-placeholder="txtPrefFilterLanguages" autocomplete="off" spellcheck="false">
+								<label class="chip"><input type="checkbox" id="lngAll"><span data-i18n="txtPrefAllLanguages"></span></label>
+							</div>
+							<div class="lng-list" id="lngList"></div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- ===================== Highlighter ===================== -->
+			<section id="highlighter" class="section">
+				<h2 data-i18n="txtPrefHighligher"></h2>
+				<div class="card">
+					<div class="row column">
+						<div class="row-label" data-i18n="txtPrefColors"></div>
+						<div class="hl-grid" id="hlGrid"></div>
+					</div>
+					<label class="row"><span class="row-text"><span class="row-label" data-i18n="txtPrefAutoSelectColors"></span></span>
+						<span class="row-control"><input type="checkbox" class="switch" data-pref="prefAutoSelectColors"></span></label>
+					<label class="row"><span class="row-text"><span class="row-label" data-i18n="txtPrefIgnorePunctuation"></span></span>
+						<span class="row-control"><input type="checkbox" class="switch" data-pref="prefIgnorePunctuation"></span></label>
+					<label class="row"><span class="row-text"><span class="row-label" data-i18n="txtPrefAutoHighlight"></span></span>
+						<span class="row-control"><input type="checkbox" class="switch" data-pref="prefAutoHighlight"></span></label>
+					<div class="row">
+						<div class="row-text">
+							<label class="row-label" for="prefInstantHighlightKey" data-hold="txtPrefInstantHighlighKey"></label>
+							<div class="row-hint" data-i18n="txtPrefHighlightKeysHint"></div>
+						</div>
+						<div class="row-control"><select id="prefInstantHighlightKey" data-pref="prefInstantHighlightKey" data-source="keys" class="input"></select></div>
+					</div>
+				</div>
+			</section>
+
+			<!-- ===================== Conversion ===================== -->
+			<section id="conversion" class="section">
+				<h2 data-i18n="txtPrefConversion"></h2>
+				<div class="card">
+					<div class="row">
+						<div class="row-text"><label class="row-label" for="prefConversionDestCur" data-i18n="txtPrefConversionDestCur"></label></div>
+						<div class="row-control"><select id="prefConversionDestCur" data-pref="prefConversionDestCur" data-source="cur" class="input"></select></div>
+					</div>
+					<div class="row">
+						<div class="row-text"><label class="row-label" for="prefConversionDestTemp" data-i18n="txtPrefConversionDestTemp"></label></div>
+						<div class="row-control"><select id="prefConversionDestTemp" data-pref="prefConversionDestTemp" data-source="temp" class="input"></select></div>
+					</div>
+					<div class="row">
+						<div class="row-text"><label class="row-label" for="prefConversionDestMass" data-i18n="txtPrefConversionDestMass"></label></div>
+						<div class="row-control"><select id="prefConversionDestMass" data-pref="prefConversionDestMass" data-source="mass" class="input"></select></div>
+					</div>
+					<div class="row">
+						<div class="row-text"><label class="row-label" for="prefConversionDestLen" data-i18n="txtPrefConversionDestLen"></label></div>
+						<div class="row-control"><select id="prefConversionDestLen" data-pref="prefConversionDestLen" data-source="len" class="input"></select></div>
+					</div>
+					<div class="row">
+						<div class="row-text"><label class="row-label" for="prefInstantConversionKey" data-hold="txtPrefInstantConversionKey"></label></div>
+						<div class="row-control"><select id="prefInstantConversionKey" data-pref="prefInstantConversionKey" data-source="keys" class="input"></select></div>
+					</div>
+				</div>
+			</section>
+
+			<!-- ===================== Appearance ===================== -->
+			<section id="appearance" class="section">
+				<h2 data-i18n="txtPrefAppearance"></h2>
+
+				<div class="card split">
+					<div class="split-controls">
+						<h3 class="card-title" data-i18n="txtPrefMenu"></h3>
+						<div class="row"><div class="row-text"><label class="row-label" for="prefMenuFontSize" data-i18n="txtPrefFontSize"></label></div>
+							<div class="row-control"><input type="number" id="prefMenuFontSize" data-pref="prefMenuFontSize" min="6" max="64" class="input number"></div></div>
+						<div class="row"><div class="row-text"><span class="row-label" data-i18n="txtPrefColor"></span></div>
+							<div class="row-control"><input type="color" data-pref="prefMenuFontColor" class="color"></div></div>
+						<div class="row"><div class="row-text"><span class="row-label" data-i18n="txtPrefIconsColor"></span></div>
+							<div class="row-control"><input type="color" data-pref="prefMenuIconsColor" class="color"></div></div>
+						<div class="row"><div class="row-text"><span class="row-label" data-i18n="txtPrefBkColor"></span></div>
+							<div class="row-control"><input type="color" data-pref="prefMenuBkColor" class="color"></div></div>
+					</div>
+					<div class="split-preview">
+						<div class="preview-label" data-i18n="txtPrefPreview"></div>
+						<div class="pv-stage"><ul class="pv-menu" id="pvMenu"></ul></div>
+					</div>
+				</div>
+
+				<div class="card split">
+					<div class="split-controls">
+						<h3 class="card-title" data-i18n="txtPrefPanel"></h3>
+						<div class="row">
+							<div class="row-text"><label class="row-label" for="prefPanelItemsN" data-i18n="txtPrefPanelItemsN"></label>
+								<div class="row-hint" data-i18n="txtPrefPanelItemsNHint"></div></div>
+							<div class="row-control inline">
+								<input type="number" id="prefPanelItemsN" data-pref="prefPanelItemsN" min="0" max="100" class="input number">
+								<div class="segmented small" role="radiogroup">
+									<label><input type="radio" name="panelitems" data-pref="prefPanelItemsNRows"><span data-i18n="txtPrefPanelRows"></span></label>
+									<label><input type="radio" name="panelitems" data-pref="prefPanelItemsNCols"><span data-i18n="txtPrefPanelCols"></span></label>
+								</div>
+							</div>
+						</div>
+						<div class="row"><div class="row-text"><span class="row-label" data-i18n="txtPrefBkColor"></span></div>
+							<div class="row-control"><input type="color" data-pref="prefPanelBkColor" class="color"></div></div>
+						<div class="row"><div class="row-text"><span class="row-label" data-i18n="txtPrefIconsColor"></span></div>
+							<div class="row-control"><input type="color" data-pref="prefPanelIconsColor" class="color"></div></div>
+						<div class="row"><div class="row-text"><label class="row-label" for="prefPanelPadding" data-i18n="txtPrefPadding"></label></div>
+							<div class="row-control"><input type="number" id="prefPanelPadding" data-pref="prefPanelPadding" min="0" max="50" class="input number"></div></div>
+						<div class="row"><div class="row-text"><label class="row-label" for="prefPanelRoundness" data-i18n="txtPrefRoundness"></label></div>
+							<div class="row-control"><input type="number" id="prefPanelRoundness" data-pref="prefPanelRoundness" min="0" max="50" class="input number"></div></div>
+						<div class="row"><div class="row-text"><label class="row-label" for="prefPanelIconSize" data-i18n="txtPrefIconSize"></label></div>
+							<div class="row-control"><input type="number" id="prefPanelIconSize" data-pref="prefPanelIconSize" min="8" max="64" class="input number"></div></div>
+						<div class="row"><div class="row-text"><label class="row-label" for="prefPanelIconPadding" data-i18n="txtPrefIconPadding"></label></div>
+							<div class="row-control"><input type="number" id="prefPanelIconPadding" data-pref="prefPanelIconPadding" min="0" max="25" class="input number"></div></div>
+					</div>
+					<div class="split-preview">
+						<div class="preview-label" data-i18n="txtPrefPreview"></div>
+						<div class="pv-stage"><div class="pv-panel" id="pvPanel"></div></div>
+					</div>
+				</div>
+
+				<div class="card split">
+					<div class="split-controls">
+						<h3 class="card-title" data-i18n="txtPrefTranslation"></h3>
+						<div class="row"><div class="row-text"><label class="row-label" for="prefTranslationFontSize" data-i18n="txtPrefFontSize"></label></div>
+							<div class="row-control"><input type="number" id="prefTranslationFontSize" data-pref="prefTranslationFontSize" min="6" max="64" class="input number"></div></div>
+						<div class="row"><div class="row-text"><span class="row-label" data-i18n="txtPrefColor"></span></div>
+							<div class="row-control"><input type="color" data-pref="prefTranslationFontColor" class="color"></div></div>
+						<div class="row"><div class="row-text"><span class="row-label" data-i18n="txtPrefIconsColor"></span></div>
+							<div class="row-control"><input type="color" data-pref="prefTransIconsColor" class="color"></div></div>
+						<div class="row"><div class="row-text"><span class="row-label" data-i18n="txtPrefBkColor"></span></div>
+							<div class="row-control"><input type="color" data-pref="prefTranslationBkColor" class="color"></div></div>
+						<div class="row"><div class="row-text"><span class="row-label" data-i18n="txtPrefBorderColor"></span></div>
+							<div class="row-control"><input type="color" data-pref="prefTranslationBorderColor" class="color"></div></div>
+						<div class="row"><div class="row-text"><span class="row-label" data-i18n="txtPrefLngColor"></span></div>
+							<div class="row-control"><input type="color" data-pref="prefTranslationLngColor" class="color"></div></div>
+						<div class="row"><div class="row-text"><span class="row-label" data-i18n="txtPrefEngineColor"></span></div>
+							<div class="row-control"><input type="color" data-pref="prefTranslationEngineColor" class="color"></div></div>
+					</div>
+					<div class="split-preview">
+						<div class="preview-label" data-i18n="txtPrefPreview"></div>
+						<div class="pv-stage"><div class="pv-translation" id="pvTranslation"></div></div>
+					</div>
+				</div>
+
+				<div class="card split">
+					<div class="split-controls">
+						<h3 class="card-title" data-i18n="txtPrefConversion"></h3>
+						<div class="row"><div class="row-text"><label class="row-label" for="prefConversionFontSize" data-i18n="txtPrefFontSize"></label></div>
+							<div class="row-control"><input type="number" id="prefConversionFontSize" data-pref="prefConversionFontSize" min="6" max="64" class="input number"></div></div>
+						<div class="row"><div class="row-text"><span class="row-label" data-i18n="txtPrefColor"></span></div>
+							<div class="row-control"><input type="color" data-pref="prefConversionFontColor" class="color"></div></div>
+						<div class="row"><div class="row-text"><span class="row-label" data-i18n="txtPrefIconsColor"></span></div>
+							<div class="row-control"><input type="color" data-pref="prefConversionIconsColor" class="color"></div></div>
+						<div class="row"><div class="row-text"><span class="row-label" data-i18n="txtPrefBkColor"></span></div>
+							<div class="row-control"><input type="color" data-pref="prefConversionBkColor" class="color"></div></div>
+						<div class="row"><div class="row-text"><span class="row-label" data-i18n="txtPrefBorderColor"></span></div>
+							<div class="row-control"><input type="color" data-pref="prefConversionBorderColor" class="color"></div></div>
+						<div class="row"><div class="row-text"><span class="row-label" data-i18n="txtPrefConverterColor"></span></div>
+							<div class="row-control"><input type="color" data-pref="prefConversionConverterColor" class="color"></div></div>
+						<div class="row"><div class="row-text"><span class="row-label" data-i18n="txtPrefUnitColor"></span></div>
+							<div class="row-control"><input type="color" data-pref="prefConversionUnitColor" class="color"></div></div>
+					</div>
+					<div class="split-preview">
+						<div class="preview-label" data-i18n="txtPrefPreview"></div>
+						<div class="pv-stage"><div class="pv-converter" id="pvConverter"></div></div>
+					</div>
+				</div>
+			</section>
+
+			<!-- ===================== Shortcuts ===================== -->
+			<section id="shortcuts" class="section">
+				<h2 data-i18n="txtPrefShortcuts"></h2>
+				<div class="card">
+					<div id="commandList"></div>
+					<div class="row">
+						<div class="row-text"><div class="row-hint" data-i18n="txtPrefShortcutsHint"></div></div>
+						<div class="row-control"><button type="button" class="btn" id="btnConfigureShortcuts" data-i18n="txtPrefConfigureShortcuts"></button></div>
+					</div>
+				</div>
+			</section>
+
+			<!-- ===================== API keys ===================== -->
+			<section id="apikeys" class="section">
+				<h2 data-i18n="txtPrefApiKeys"></h2>
+				<p class="section-desc" data-i18n="txtPrefApiKeysDesc"></p>
+				<div class="card">
+					<div class="row">
+						<div class="row-text">
+							<label class="row-label" for="prefKeyWordnik" data-i18n="txtPrefWordnikKey"></label>
+							<div class="row-hint"><span data-i18n="txtPrefWordnikKeyHint"></span> <a href="https://developer.wordnik.com/" target="_blank" rel="noopener" data-i18n="txtPrefGetKey"></a></div>
+						</div>
+						<div class="row-control"><input type="password" id="prefKeyWordnik" data-pref="prefKeyWordnik" class="input mono key" autocomplete="off" spellcheck="false"></div>
+					</div>
+					<div class="row">
+						<div class="row-text">
+							<label class="row-label" for="prefKeyCryptoCompare" data-i18n="txtPrefCryptoCompareKey"></label>
+							<div class="row-hint"><span data-i18n="txtPrefCryptoCompareKeyHint"></span> <a href="https://www.cryptocompare.com/cryptopian/api-keys" target="_blank" rel="noopener" data-i18n="txtPrefGetKey"></a></div>
+						</div>
+						<div class="row-control"><input type="password" id="prefKeyCryptoCompare" data-pref="prefKeyCryptoCompare" class="input mono key" autocomplete="off" spellcheck="false"></div>
+					</div>
+					<div class="row">
+						<div class="row-text">
+							<label class="row-label" for="prefKeyYandexDict" data-i18n="txtPrefYandexKey"></label>
+							<div class="row-hint"><span data-i18n="txtPrefYandexKeyHint"></span> <a href="https://yandex.com/dev/dictionary/keys/get/" target="_blank" rel="noopener" data-i18n="txtPrefGetKey"></a></div>
+						</div>
+						<div class="row-control"><input type="password" id="prefKeyYandexDict" data-pref="prefKeyYandexDict" class="input mono key" autocomplete="off" spellcheck="false"></div>
+					</div>
+				</div>
+			</section>
+
+			<!-- ===================== Maintenance ===================== -->
+			<section id="maintenance" class="section">
+				<h2 data-i18n="txtPrefMaintenance"></h2>
+				<div class="card">
+					<div class="row">
+						<div class="row-text"><div class="row-label" data-i18n="txtPrefBackupToFile"></div><div class="row-hint" data-i18n="txtPrefBackupDesc"></div></div>
+						<div class="row-control inline">
+							<button type="button" class="btn" id="btnBackupToFile" data-i18n="txtPrefBackupToFile"></button>
+							<button type="button" class="btn" id="btnRestoreFromFile" data-i18n="txtPrefRestoreFromFile"></button>
+							<input type="file" id="prefSelectedFile" accept=".txt,.json,application/json,text/plain" hidden>
+						</div>
+					</div>
+					<div class="row">
+						<div class="row-text"><div class="row-label" data-i18n="txtPrefBookmarks"></div><div class="row-hint" data-i18n="txtPrefMycroftHint"></div></div>
+						<div class="row-control"><a class="btn" href="https://mycroftproject.com/" target="_blank" rel="noopener">Mycroft Project</a></div>
+					</div>
+				</div>
+				<h3 data-i18n="txtPrefDangerZone"></h3>
+				<div class="card danger">
+					<div class="row">
+						<div class="row-text"><div class="row-label" data-i18n="txtPrefRestoreBookmarks"></div><div class="row-hint" data-i18n="txtPrefRestoreBookmarksHint"></div></div>
+						<div class="row-control"><button type="button" class="btn danger" id="btnRestoreBookmarks" data-i18n="txtPrefRestoreBookmarks"></button></div>
+					</div>
+					<div class="row">
+						<div class="row-text"><div class="row-label" data-i18n="txtPrefRestorePrefs"></div><div class="row-hint" data-i18n="txtPrefRestorePrefsHint"></div></div>
+						<div class="row-control"><button type="button" class="btn danger" id="btnRestorePrefs" data-i18n="txtPrefRestorePrefs"></button></div>
+					</div>
+				</div>
+			</section>
+
+			<!-- ===================== About ===================== -->
+			<section id="about" class="section">
+				<h2 data-i18n="txtPrefAbout"></h2>
+				<div class="card about">
+					<img src="../../icons/SelectionSK_128.png" alt="" width="64" height="64">
+					<div>
+						<div class="about-title">SelectionSK <span id="aboutVersion"></span></div>
+						<p data-i18n="txtPrefAboutDesc"></p>
+						<p class="links">
+							<a href="https://github.com/ether2813/SelectionSK-ReImagined" target="_blank" rel="noopener" data-i18n="txtPrefSourceCode"></a>
+							<a href="https://github.com/ether2813/SelectionSK-ReImagined/issues/new" target="_blank" rel="noopener" data-i18n="txtPrefNewIssue"></a>
+						</p>
+						<p class="row-hint">MPL 1.1 / GPL 3.0 / LGPL 3.0</p>
+					</div>
+				</div>
+			</section>
+		</main>
+	</div>
+
+	<dialog id="confirmDialog">
+		<form method="dialog">
+			<h3 id="confirmTitle">SelectionSK</h3>
+			<p id="confirmText"></p>
+			<div class="dialog-buttons">
+				<button value="cancel" class="btn" data-i18n="txtCancel"></button>
+				<button value="ok" class="btn primary" id="confirmOk" data-i18n="txtOK"></button>
+			</div>
+		</form>
+	</dialog>
+
+	<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+	<script src="../shared/common.js"></script>
+	<script src="../shared/consts.js"></script>
+	<script src="../shared/utils.js"></script>
+	<script src="../shared/defaults.js"></script>
+	<script src="options.js"></script>
+</body>
+
+</html>
